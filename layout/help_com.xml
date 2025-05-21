@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Πληροφορίες σχετικά με το MyTheater"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:gravity="center"/>
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Διεύθυνση: 123 Πατησίων, Αθήνα"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="openMap"/>
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Τηλέφωνο: +30 210 123 4567"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:onClick="callPhone"
+            android:paddingTop="8dp"/>
+
+        <!-- Working Hours -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ώρες Προβολών: 18:00 - 22:00"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+        <!-- Disability Provisions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Παροχές αναπηρίας: Πρόσβαση σε αναπηρικά αμαξίδια"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+        <!-- Plays -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Παίζονται τώρα:"
+            android:textSize="18sp"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Παράσταση 1"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Παράσταση 2"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <!-- Google Maps -->
+        <!-- Map View -->
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Map showing the location of Athens"/>
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Πίσω"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:onClick="goBackToMenu"/>
+
+    </LinearLayout>
+</ScrollView>

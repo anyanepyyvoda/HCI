@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:background="#7A15B9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="157dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/backToChat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:background="#00FFFFFF"
+                        android:text="MyTheater"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="31dp"
+                        android:layout_height="21dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/backToChat"
+                        app:srcCompat="@android:drawable/stat_notify_chat" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/market_icon" />
+
+                <Button
+                    android:id="@+id/menuButton"
+                    android:layout_width="143dp"
+                    android:layout_height="86dp"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:text="ΜΕΝΟΥ"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="680dp">
+
+            <LinearLayout
+                android:id="@+id/MainLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ResponseA"
+                    android:layout_width="match_parent"
+                    android:layout_height="129dp">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="248dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/rounded_corner_textfield"
+                        android:backgroundTint="#E1DBDB"
+                        android:padding="35px"
+                        android:text="Γεια σας. Πώς μπορώ να σας βοηθήσω;"
+                        android:textColor="#050505"
+                        android:textFontWeight="10"
+                        android:textSize="16sp"
+                        app:circularflow_defaultRadius="100px"
+                        app:circularflow_radiusInDP="50px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="68dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="52dp"
+                        android:text="Ακρόαση"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        app:layout_constraintBottom_toBottomOf="@+id/speakerButton"
+                        app:layout_constraintEnd_toEndOf="@+id/speakerButton"
+                        app:layout_constraintTop_toTopOf="@+id/speakerButton"
+                        app:layout_constraintVertical_bias="0.68" />
+
+                    <ImageButton
+                        android:id="@+id/speakerButton"
+                        android:layout_width="55dp"
+                        android:layout_height="49dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="14dp"
+                        android:contentDescription="Speaker"
+                        app:layout_constraintBottom_toBottomOf="@+id/text1"
+                        app:layout_constraintEnd_toEndOf="@+id/text1"
+                        app:srcCompat="@mipmap/speaker_small_foreground" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/RequestA"
+                    android:layout_width="match_parent"
+                    android:layout_height="113dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="@+id/textView6">
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="246dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginBottom="11dp"
+                        android:background="@drawable/rounded_corner_textfield_red"
+                        android:backgroundTint="#FEBEB8"
+                        android:padding="35px"
+                        android:text="Γεια σας. Πώς μπορώ να σας βοηθήσω;"
+                        android:textColor="#050505"
+                        android:textFontWeight="10"
+                        android:textSize="16sp"
+                        app:circularflow_defaultRadius="100px"
+                        app:circularflow_radiusInDP="50px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/speakerButton2"
+                        android:layout_width="0dp"
+                        android:layout_height="49dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="2dp"
+                        android:contentDescription="Speaker"
+                        app:layout_constraintBottom_toBottomOf="@+id/text3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView6"
+                        app:srcCompat="@mipmap/speaker_small_foreground" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="0dp"
+                        android:layout_height="23dp"
+                        android:layout_marginStart="252dp"
+                        android:layout_marginEnd="11dp"
+                        android:text="Ακρόαση"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        app:layout_constraintBottom_toBottomOf="@+id/speakerButton2"
+                        app:layout_constraintEnd_toStartOf="@+id/speakerButton2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/speakerButton2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="415dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="413dp"
+            android:layout_height="93dp"
+            android:background="#99D1ECEF">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="74dp"
+                android:layout_height="72dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="Microphone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/sendButton"
+                app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+            <ImageButton
+                android:id="@+id/sendButton"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Send"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+                app:layout_constraintStart_toEndOf="@+id/keyboardInput"
+                app:layout_constraintTop_toTopOf="@+id/imageButton4"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@android:drawable/ic_menu_send" />
+
+            <EditText
+                android:id="@+id/keyboardInput"
+                android:layout_width="231dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:hint="Πληκτρολογήστε..."
+                android:inputType="text"
+                android:text="Πληκτρολογήστε..."
+                app:layout_constraintBottom_toBottomOf="@+id/sendButton"
+                app:layout_constraintEnd_toStartOf="@+id/sendButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/sendButton"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

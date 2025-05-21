@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPaymentMethod">
+
+    <Button
+        android:id="@+id/mastercardButton"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        android:layout_width="263dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginBottom="38dp"
+        android:backgroundTint="#5A605A"
+        android:text="Mastercard"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/paypalButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        android:layout_width="263dp"
+        android:layout_height="76dp"
+        android:backgroundTint="#5A5660"
+        android:text="ΠΙΣΩ"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <Button
+        android:id="@+id/paypalButton"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        android:layout_width="263dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="401dp"
+        android:backgroundTint="#565F60"
+        android:text="Paypal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mastercardButton"
+        app:layout_constraintVertical_bias="0.499" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

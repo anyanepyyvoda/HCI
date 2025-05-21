@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/RequestA"
+        android:layout_width="match_parent"
+        android:layout_height="113dp">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="249dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/rounded_corner_textfield_red"
+            android:backgroundTint="#FEBEB8"
+            android:padding="35px"
+            android:text="Γεια σας. Πώς μπορώ να σας βοηθήσω;"
+            android:textColor="#050505"
+            android:textFontWeight="10"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="79dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="Ακρόαση"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toBottomOf="@+id/speakerButton1"
+            app:layout_constraintEnd_toStartOf="@+id/speakerButton1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/speakerButton1" />
+
+        <ImageButton
+            android:id="@+id/speakerButton1"
+            android:layout_width="54dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="3dp"
+            android:contentDescription="Hello"
+            android:tooltipText="Hello"
+            app:layout_constraintBottom_toBottomOf="@+id/text3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:srcCompat="@mipmap/speaker_small_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>
